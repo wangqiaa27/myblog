@@ -1,0 +1,40 @@
+body{
+				background-color: beige;
+			}
+			.one{
+				width: 100%;
+				border: 1px solid black;
+				padding: 2px;
+			}
+			.two{
+				width: 100%;
+				border: 4px solid black;
+			}
+			.three{
+				width: 80%;
+				margin: 50px auto;
+				text-align: center;
+			}
+			.tu{
+				width: 150px;
+				height: 150px;
+			}
+			.duiqi{
+				margin: 5px auto;
+				width: 70%;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
+				text-align: center;
+			}
+img{
+	width: 140px;
+	height: 140px;
+}
+hr{
+	border: 1px solid black;
+}
+.zuihou{
+	width: 80%;
+	margin: 5px auto;
+	text-align: center;
+}
