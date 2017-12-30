@@ -66,17 +66,15 @@ img{
 	font-size: 15px;
 	margin-right: 10px;
 }
-#top a:hover{
-	color: red;
-}
-#top a:visited{
-	color: brown;
-	
-}
 #top a{
 	text-decoration: none;
 	color: white;
 }
+#top a:hover{
+	color: red;
+}
+
+
 .nei{
 	width: 80%;
 	margin: 0 auto;

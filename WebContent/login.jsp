@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>用户注册</title>
+<title>用户登录</title>
 <style type="text/css">
 input{
     border: 1px solid #ccc;
@@ -53,9 +53,7 @@ input{
 .cd1{
 	margin-left: 180px;
 }
-.duiqi{
-	margin: 0 auto;
-}
+
 </style>
 </head>
 
@@ -72,7 +70,7 @@ input{
 		<h3>密码</h3><input type="password" name="password" class="cd" placeholder="请输入密码"/>
 		<p>   </p>
 		<button type="submit" value="提交" class="cd1">提交</button>
-		<div class="bg-warning,duiqi" >${errMsg}</div>
+		<div class="bg-warning" >${errMsg}</div>
 	</form>
 </div>
 </div>
