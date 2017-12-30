@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 			request.getSession().setAttribute("currentUser", user);
 			response.sendRedirect("./dashboard.jsp");
 		} else {
-			request.getSession().setAttribute("errMsg", "ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼");
+			request.getSession().setAttribute("errMsg", "ÕË»§»òÃÜÂë´íÎó");
 			response.sendRedirect("./login.jsp");
 		}
 	}

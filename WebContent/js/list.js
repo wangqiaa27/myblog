@@ -13,27 +13,27 @@ $(function() {
 			articles.forEach(function(art) {
 				$ul.append('<li class="list-group-item">' 
 						+ '<h3>' + art.title + '</h3>'
-						+ '<p>' + art.content + '</p>'
-						+'<button data-id="'+ art.id +'">删除</button>'
+						//+ '<p>' + art.content + '</p>'
+						
 						+ '</li>');
 				console.log("zzzzz");
 			})
 		})
-		.then(function() {
-			$('ul .del-btn').on('click', function() {
-				var $self = $(this);
-				var id = $self.data('id');
-				fetch('./del.do?ajax=true&id=' + id)
-					.then(function(response) {
-						return response.json();
-					})
-					.then(function(res) {
-						if(res.ok === 1) {
-							$self.parent().remove();
-						}
-					})
-			})
-		})
+//		.then(function() {
+//			$('ul .del-btn').on('click', function() {
+//				var $self = $(this);
+//				var id = $self.data('id');
+//				fetch('./del.do?ajax=true&id=' + id)
+//					.then(function(response) {
+//						return response.json();
+//					})
+//					.then(function(res) {
+//						if(res.ok === 1) {
+//							$self.parent().remove();
+//						}
+//					})
+//			})
+//		})
 	}
 	
 	doPost();
