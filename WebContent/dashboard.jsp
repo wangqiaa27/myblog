@@ -82,6 +82,7 @@ img{
 }
 #tian{
 	float: left;
+	margin-left:10px;
 	
 }
 #tian a{
