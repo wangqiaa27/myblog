@@ -10,9 +10,97 @@
 	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	rel="stylesheet">
 <title>所有文章</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+input{
+    border: 1px solid #ccc;
+    padding: 7px 0px;
+    border-radius: 3px;
+    padding-left:5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+body{
+	background:darkgray;
+}
+img{
+	width: 80px;
+	height: 80px;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+#top{
+	width: 100%;
+	height: 85px;
+	background: black;
+	color: white;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.top_1{
+	width: 85px;
+	height: 85px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.top_2{
+	width: 300px;
+	height: 85px;
+	float: left;
+	margin-top:30px ;
+}
+.top_3{
+	float: right;
+	margin-top: 60px;
+	font-size: 15px;
+	margin-right: 10px;
+}
+#top a{
+	text-decoration: none;
+	color: white;
+}
+#top a:hover{
+	color: red;
+}
+.jz{
+	width:80%;
+	margin: 0 auto;
+}
+#right{
+	margin-left:20px;
+	
+}
+#right a{
+	text-decoration: none;
+	color:green;
+}
+#right a:hover{
+	color:red;
+}
+</style>
 </head>
 <body>
+<div id="top">
+		<div class="top_1"><img alt="头像" src="./uploads/${currentUser.filename}"/></div>
+		<div class="top_2">欢迎${currentUser.username}</div>
+		<div class="top_3"><a href="./login.jsp">切换用户</a>&nbsp;&nbsp;<a href="./register.jsp">注册</a></div>
+	</div>
 	<h1>文章列表</h1>
+	<div id="right"><a href="./dashboard.jsp">返回首页</a></div>
+	<div class="jz">
 	<ul>
 		<c:forEach var="t" items="${articles}">
 			<li>
@@ -24,8 +112,10 @@
 			</li>
 		</c:forEach>
 	</ul>
+	</div>
+	
 
-	<div>
+	<div class="jz">
 		<ul class="pagination">
 			<c:choose>
 				<c:when test="${current == 0 }">
