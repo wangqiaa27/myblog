@@ -99,9 +99,9 @@ img{
 </head>
 <body>
 	<div id="top">
-		<div class="top_1"><img alt="头像" src="./uploads/${currentUser.filename}"/></div>
+		<div class="top_1"><img alt="头像" src="../uploads/${currentUser.filename}"/></div>
 		<div class="top_2">欢迎${currentUser.username}</div>
-		<div class="top_3"><a href="./login.jsp">切换用户</a>&nbsp;&nbsp;<a href="./register.jsp">注册</a></div>
+		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;<a href="../register.jsp">注册</a></div>
 	</div>
 		<p>BLOGS</p>
 	<div id="tian"><a href="./add.jsp">添加文章</a></div>
@@ -113,6 +113,6 @@ img{
 		<ul class="list-group" id="list-articles">		
 		</ul>
 	</div>
-	<script type="text/javascript" src="./js/list.js"></script>
+	<script type="text/javascript" src="../js/list.js"></script>
 </body>
 </html>

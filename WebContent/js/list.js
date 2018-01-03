@@ -4,7 +4,7 @@
 $(function() {
 	var i = 1;
 	function doPost(){
-		fetch('./list.do?type=json&page='+i)
+		fetch('./list.do?type=json&page='+i,{credentials: 'same-origin'})
 		.then(function(response) {
 			return response.json();
 		})

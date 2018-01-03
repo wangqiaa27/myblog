@@ -45,9 +45,9 @@ public class AddBlogServlet extends HttpServlet {
 			ArticleDao.save(runner, article);
 		} catch (SQLException e) {
 			e.printStackTrace();
-			//TODO: 跳转到错误页面。
+			//TODO: 璺宠浆鍒伴敊璇〉闈€��
 		}
-		response.sendRedirect("./list.do");
+		response.sendRedirect("./admin/list.do");
 		
 	}
 

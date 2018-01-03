@@ -147,9 +147,9 @@ textarea{
 </head>
 <body>
 	<div id="top">
-		<div class="top_1"><img alt="头像" src="./uploads/${currentUser.filename}"/></div>
+		<div class="top_1"><img alt="头像" src="../uploads/${currentUser.filename}"/></div>
 		<div class="top_2">&nbsp;&nbsp;&nbsp;&nbsp;${currentUser.username}</div>
-		<div class="top_3"><a href="./login.jsp">切换用户</a>&nbsp;&nbsp;<a href="./register.jsp">注册</a></div>
+		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;<a href="../register.jsp">注册</a></div>
 	</div>
 	<br />
 	
@@ -163,7 +163,7 @@ textarea{
 		</div>
 		<div class="right">
 			
-			<form action="./add.do" method="post">
+			<form action="../add.do" method="post">
 				<div class="right1">
 					标题：<input type="text" name="title"/>
 				</div>

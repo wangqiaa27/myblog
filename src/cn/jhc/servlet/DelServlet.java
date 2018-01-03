@@ -17,7 +17,7 @@ import cn.jhc.db.ArticleDao;
 /**
  * Servlet implementation class DelServlet
  */
-@WebServlet("/del.do")
+@WebServlet("/admin/del.do")
 public class DelServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

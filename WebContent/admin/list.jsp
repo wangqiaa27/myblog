@@ -94,9 +94,9 @@ img{
 </head>
 <body>
 <div id="top">
-		<div class="top_1"><img alt="头像" src="./uploads/${currentUser.filename}"/></div>
+		<div class="top_1"><img alt="头像" src="../uploads/${currentUser.filename}"/></div>
 		<div class="top_2">欢迎${currentUser.username}</div>
-		<div class="top_3"><a href="./login.jsp">切换用户</a>&nbsp;&nbsp;<a href="./register.jsp">注册</a></div>
+		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;<a href="../register.jsp">注册</a></div>
 	</div>
 	<h1>文章列表</h1>
 	<div id="right"><a href="./dashboard.jsp">返回首页</a></div>

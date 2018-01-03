@@ -23,15 +23,15 @@ import cn.jhc.db.ArticleDao;
 /**
  * Servlet implementation class ListArticlesServlet
  */
-@WebServlet("/list.do")
+@WebServlet("/admin/list.do")
 public class ListArticlesServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	/**
-	 * list.jsp需要知道的数据：
-	 * total -- 总页数
-	 * current -- 当前页码
-	 * articles -- 当前页的文章列表
+	 * list.jsp闇�瑕佺煡閬撶殑鏁版嵁锛�
+	 * total -- 鎬婚〉鏁�
+	 * current -- 褰撳墠椤电爜
+	 * articles -- 褰撳墠椤电殑鏂囩珷鍒楄〃
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String type = request.getParameter("type");
