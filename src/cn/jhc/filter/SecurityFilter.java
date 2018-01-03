@@ -33,7 +33,7 @@ public class SecurityFilter implements Filter {
 		User user = (User) ((HttpServletRequest)request).getSession().getAttribute("currentUser");
 		String context = request.getServletContext().getContextPath();
 		if(user == null) {
-			((HttpServletResponse)response).sendRedirect(context + "/login.jsp");
+			((HttpServletResponse)response).sendRedirect(context + "/index.jsp");
 		} else {
 			// pass the request along the filter chain
 			chain.doFilter(request, response);
