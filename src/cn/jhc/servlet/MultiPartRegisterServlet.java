@@ -71,7 +71,7 @@ public class MultiPartRegisterServlet extends HttpServlet {
 			e.printStackTrace();
 			resp.sendError(500);
 		}
- 		resp.sendRedirect("./uploads/" + savedName);
+ 		resp.sendRedirect("./admin/register.jsp");
 	}
 	
 	private String getContent(Part part) throws IOException {
