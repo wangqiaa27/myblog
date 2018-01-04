@@ -68,7 +68,7 @@
 							<input type="text" name="vcode"/>
 						</div>
 						<div class="col-md-4">
-							<img alt="验证码" src="./vcode"/>
+							<img alt="验证码" src="./vcode" onclick="this.src='./vcode?k='+Math.random()"/>
 						</div>
 					</div>
 					<div class="form-group">

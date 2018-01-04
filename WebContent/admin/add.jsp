@@ -148,8 +148,15 @@ textarea{
 <body>
 	<div id="top">
 		<div class="top_1"><img alt="头像" src="../uploads/${currentUser.filename}"/></div>
-		<div class="top_2">&nbsp;&nbsp;&nbsp;&nbsp;${currentUser.username}</div>
-		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;<a href="../register.jsp">注册</a></div>
+		<div class="top_2">欢迎${currentUser.username}</div>
+		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;
+		<form action="../inva.do" method="post">
+		<a href="#"  onclick=" document.forms[0].submit();">登出</a>
+		
+			<!-- <button type="submit"> 删除</button> -->
+		</form>
+		</div>
+		
 	</div>
 	<br />
 	

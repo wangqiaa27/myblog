@@ -78,6 +78,11 @@ img{
 .jz{
 	width:80%;
 	margin: 0 auto;
+	
+}
+.jz1{
+	width:500px;
+	margin: 0 auto;
 }
 #right{
 	margin-left:20px;
@@ -90,20 +95,33 @@ img{
 #right a:hover{
 	color:red;
 }
+.liebiao{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin-bottom:2px;
+}
 </style>
 </head>
 <body>
 <div id="top">
 		<div class="top_1"><img alt="头像" src="../uploads/${currentUser.filename}"/></div>
 		<div class="top_2">欢迎${currentUser.username}</div>
-		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;<a href="../register.jsp">注册</a></div>
+		<div class="top_3"><a href="../login.jsp">切换用户</a>&nbsp;&nbsp;
+		<form action="../inva.do" method="post">
+		<a href="#"  onclick=" document.forms[0].submit();">登出</a>
+		
+			<!-- <button type="submit"> 删除</button> -->
+		</form>
+		</div>
+		
 	</div>
 	<h1>文章列表</h1>
 	<div id="right"><a href="./dashboard.jsp">返回首页</a></div>
 	<div class="jz">
 	<ul>
 		<c:forEach var="t" items="${articles}">
-			<li>
+			<li class="liebiao">
 				<h3>${t.title}</h3>
 				<p>${t.content}</p>
 				<p>
@@ -115,7 +133,7 @@ img{
 	</div>
 	
 
-	<div class="jz">
+	<div class="jz1">
 		<ul class="pagination">
 			<c:choose>
 				<c:when test="${current == 0 }">
