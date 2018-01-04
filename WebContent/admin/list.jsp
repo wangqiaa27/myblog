@@ -81,7 +81,7 @@ img{
 	
 }
 .jz1{
-	width:500px;
+	width:580px;
 	margin: 0 auto;
 }
 #right{
