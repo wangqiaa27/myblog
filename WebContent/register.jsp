@@ -7,10 +7,15 @@
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/main.css" rel="stylesheet">
 <title>用户注册</title>
+<style type="text/css">
+body{
+	background:cornflowerblue;
+}
+</style>
 </head>
 <body>
-	<div class="container">
-		<div class="panel panel-default col-md-offset-3 col-md-6 register-panel">
+	<div class="container" >
+		<div class="panel panel-default col-md-offset-3 col-md-6 register-panel" style="background:beige;">
 			<div class="h2 text-center">用户注册</div>
 			<div class="pannel-body">
 				<form class="form-horizontal" action="./uploadMulti.do" method="post"
